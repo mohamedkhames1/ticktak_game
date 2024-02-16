@@ -11,7 +11,7 @@ class FutureListViewItems extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 2.7 / 4,
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 10,),
+        margin: const EdgeInsets.only(right: 15,),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           color: Colors.red,
