@@ -1,7 +1,6 @@
 import 'package:booklyapp/core/utlis/styles.dart';
 import 'package:flutter/material.dart';
-import '../../../../../core/utlis/assets.dart';
-import 'customlistviewitems.dart';
+import 'bestsellerlistviewitems.dart';
 import 'futurbookslistview.dart';
 import 'homeviewAppBar.dart';
 
@@ -38,33 +37,3 @@ class HomeViewBody extends StatelessWidget {
   }
 }
 
-class BestSellerListViewItems extends StatelessWidget {
-  const BestSellerListViewItems({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 125,
-      child: Row(
-        children: [
-          const FutureListViewItems(),
-          const SizedBox(
-            width: 30,
-          ),
-          Column(
-            children: [
-              SizedBox(
-                  width: MediaQuery.of(context).size.width * .5,
-                  child: Text(
-                    'Harry Potter and the Goblet of fire ',
-                    style: Styles.textStyle20,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),),
-            ],
-          )
-        ],
-      ),
-    );
-  }
-}
