@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'bestsellerlistviewitems.dart';
 
 class BestSellerListView extends StatelessWidget {
