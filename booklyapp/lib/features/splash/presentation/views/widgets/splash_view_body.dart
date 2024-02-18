@@ -1,7 +1,7 @@
+import 'package:booklyapp/core/utlis/app_rout.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../const.dart';
-import '../../../../home/presentation/view/homeView.dart';
 import 'sliding_animation.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -48,7 +48,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   }
   void navigattoHome() {
     Future.delayed(const Duration(seconds: 3),(){
-      Get.to(()=>const HomeView(),transition: Transition.fadeIn,duration:ktranstion);
+      GoRouter.of(context).pushReplacement(AppRout.homeview);
     });
   }
 
