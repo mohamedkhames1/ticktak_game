@@ -1,4 +1,5 @@
 import 'package:booklyapp/features/home/presentation/view/%20widgets/boolratig.dart';
+import 'package:booklyapp/features/home/presentation/view/%20widgets/futurbookslistview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -44,7 +45,14 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
           const BookRating(),
           const SizedBox(height: 10,),
-          const BookAction()
+          const BookAction(),
+          const SizedBox(height:40 ,),
+          Text('You can also like',style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w900),),
+          const SizedBox(height:16 ,),
+          const SizedBox(
+              height: 150,
+              child: FutureBooksListView()),
+          const SizedBox(height: 40,)
         ],
       ),
     );
